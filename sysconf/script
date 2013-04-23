@@ -5,4 +5,4 @@ sudo apt-get install postfix
 sudo adduser static
 sudo adduser static adm
 sudo adduser static sudo
-
+\curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
