@@ -1,6 +1,6 @@
-  server { # personal_website
+  server { # brve
     # enable one of the following if you're on Linux or FreeBSD
-    listen 80 default deferred; # for Linux
+    listen 80; # deferred # for Linux
     # listen 80 default accept_filter=httpready; # for FreeBSD
 
     # If you have IPv6, you'll likely want to have two separate listeners.
@@ -12,7 +12,7 @@
     # listen [::]:80 ipv6only=on; # deferred or accept_filter recommended
 
     client_max_body_size 4G;
-    server_name jackwaugh.com; # www.jackwaugh.com
+    server_name brve.us www.brve.us;
 
     # ~2 seconds is often enough for most folks to parse HTML/CSS and
     # retrieve needed images/icons/frames, connections are cheap in
@@ -20,7 +20,7 @@
     keepalive_timeout 5;
 
     # path for static files
-    root /home/static/projects/personal_website/public;
+    root /home/jack/projects/brve/public;
 
     # Prefer to serve static files directly from nginx to avoid unnecessary
     # data copies from the application server.
@@ -61,11 +61,11 @@
       # proxy_buffering off;
 
       proxy_pass http://app_server;
-    } # location
+    } # location @app
 
     # Rails error pages
     error_page 500 502 503 504 /500.html;
     location = /500.html {
-      root /home/static/projects/personal_website/public;
+      root /home/jack/projects/brve/public;
     }
-  } # server personal_website
+  } # server brve
