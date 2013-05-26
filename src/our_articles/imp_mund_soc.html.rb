@@ -17,6 +17,26 @@ article "Imperatrix Mundi -- Current Ideas", :depth => 1 do
     text "I put the rest of this page in reverse chronological"
     text "order."
   end
+  h2 "2013-05-26"
+  p do
+    text "The"
+    a "Curry", :href =>
+      "http://www-ps.informatik.uni-kiel.de/currywiki/"
+    text "language and the"
+    a "Mercury", :href =>
+      "http://www.mercurylang.org/information/doc-latest/mercury_ref/index.html#Top"
+    text "language both put logic on the outside and functional programming"
+    text "on the inside."
+    text "So, I decide to turn to the "
+    a "Oz/Mozart", :href =>
+      "http://www.mozart-oz.org/documentation/tutorial/index.html"
+    text "language as a starting point"
+    text "(I know that the name of the language is Oz and Mozart is just an"
+    text "implementation of the Oz language; however, I believe that just"
+    text "the term \"oz\" (no matter how capitalized) is hard to search"
+    text "for in current searching technology, and so I mention"
+    text "\"Oz/Mozart\" to attract searches for mentions of the Oz language)."
+  end
   h2 "2010-10-22"
   p do
     text "I need to study the"

@@ -1,3 +1,8 @@
+# Jack
+
+.rvmrc
+
+# not Jack
 *.gem
 *.rbc
 .bundle

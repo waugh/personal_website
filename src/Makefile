@@ -2,7 +2,7 @@
 
 RUBYOPT = -I.
 
-tgts: ../public ../public/img ../public/our_articles ../public/others_articles  ../public/style.css ../public/index.html ../public/img/self_2010-01_thumb.jpg ../public/img/happy_human.gif ../public/img/snow_grosvenor_2010-01.jpg ../public/img/golf_2010-02-07.jpg ../public/our_articles/imp_mund_intro.html ../public/our_articles/snowy_golf_course.html ../public/our_articles/imp_mund.html ../public/our_articles/imp_mund_soc.html ../public/others_articles/dummy
+tgts: ../public ../public/img ../public/our_articles ../public/others_articles  ../public/style.css ../public/index.html ../public/img/happy_human.gif ../public/img/self_2010-01_thumb.jpg ../public/img/snow_grosvenor_2010-01.jpg ../public/img/golf_2010-02-07.jpg ../public/our_articles/imp_mund.html ../public/our_articles/snowy_golf_course.html ../public/our_articles/imp_mund_soc.html ../public/our_articles/imp_mund_intro.html ../public/others_articles/dummy
 	ruby $(RUBYOPT) tell_photo_width.rb
 
 list: . left right our_articles others_articles
@@ -42,20 +42,20 @@ pristeen: clean
 	ruby $(RUBYOPT) index.html.rb >$@.t
 	mv $@.t $@
 
-../public/our_articles/imp_mund_intro.html: our_articles/imp_mund_intro.html.rb common.rb env.rb
-	ruby $(RUBYOPT) our_articles/imp_mund_intro.html.rb >$@.t
+../public/our_articles/imp_mund.html: our_articles/imp_mund.html.rb common.rb env.rb
+	ruby $(RUBYOPT) our_articles/imp_mund.html.rb >$@.t
 	mv $@.t $@
 
 ../public/our_articles/snowy_golf_course.html: our_articles/snowy_golf_course.html.rb common.rb env.rb
 	ruby $(RUBYOPT) our_articles/snowy_golf_course.html.rb >$@.t
 	mv $@.t $@
 
-../public/our_articles/imp_mund.html: our_articles/imp_mund.html.rb common.rb env.rb
-	ruby $(RUBYOPT) our_articles/imp_mund.html.rb >$@.t
-	mv $@.t $@
-
 ../public/our_articles/imp_mund_soc.html: our_articles/imp_mund_soc.html.rb common.rb env.rb
 	ruby $(RUBYOPT) our_articles/imp_mund_soc.html.rb >$@.t
+	mv $@.t $@
+
+../public/our_articles/imp_mund_intro.html: our_articles/imp_mund_intro.html.rb common.rb env.rb
+	ruby $(RUBYOPT) our_articles/imp_mund_intro.html.rb >$@.t
 	mv $@.t $@
 
 ../public/others_articles/dummy: others_articles/dummy.rb common.rb env.rb
@@ -66,11 +66,11 @@ Makefile: Makefile.rb common.rb images *articles* env.rb
 	ruby $(RUBYOPT) Makefile.rb >$@.t
 	mv $@.t $@
 
-../public/img/self_2010-01_thumb.jpg: images/self_2010-01_thumb.jpg
+../public/img/happy_human.gif: images/happy_human.gif
 	rm -f $@
 	ln $? $@
 
-../public/img/happy_human.gif: images/happy_human.gif
+../public/img/self_2010-01_thumb.jpg: images/self_2010-01_thumb.jpg
 	rm -f $@
 	ln $? $@
 

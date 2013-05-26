@@ -6,11 +6,11 @@ div :class => "article_summary" do
   end
   ol do
     li do
-      a "Introduction", :href => "our_articles/imp_mund_intro.html"
-      text "[2010-08-27]"
+      a "Current musing", :href => "our_articles/imp_mund_soc.html"
+      text "[2013-05-26]"
     end
     li do
-      a "Current musing", :href => "our_articles/imp_mund_soc.html"
+      a "Introduction", :href => "our_articles/imp_mund_intro.html"
       text "[2010-08-27]"
     end
   end
