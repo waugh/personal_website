@@ -7,7 +7,7 @@ div :class => "article_summary" do
   ol do
     li do
       a "Current musing", :href => "our_articles/imp_mund_soc.html"
-      text "[2013-05-26]"
+      text "[2013-05-27 UTC]"
     end
     li do
       a "Introduction", :href => "our_articles/imp_mund_intro.html"

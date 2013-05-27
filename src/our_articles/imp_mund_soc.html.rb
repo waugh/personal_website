@@ -17,6 +17,219 @@ article "Imperatrix Mundi -- Current Ideas", :depth => 1 do
     text "I put the rest of this page in reverse chronological"
     text "order."
   end
+  h2 "2013-05-27 02:46:42 UTC"
+  tag :table do
+    tag :thead do
+      tag :tr do
+        tag :th do
+          text "Oz"
+        end
+        tag :th do
+          text "Imperatrix Mundi"
+        end
+      end
+    end
+    tag :tbody do
+      tag :tr do
+        tag :td do # Oz
+          text "Kernel Language"
+        end
+        tag :td do # IM
+          text "should exhibit referential transparency."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Data types"
+        end
+        tag :td do # IM
+          text "To revisit."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Logical Variables"
+        end
+        tag :td do # IM
+          text "Flows."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "\"X = 1\" binds the variable if it is unbound or otherwise"
+          text "tests for equality and raises an exception if equality doesn't"
+          text "hold."
+        end
+        tag :td do # IM
+          text "Binding and test should look different from one another."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Deep equality testing."
+        end
+        tag :td do # IM
+          text "To revisit."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          tag :em, "Record"
+        end
+        tag :td do # IM
+          text "Similar concept and call it a \"message\"."
+          text "Keywords required on features, and order doesn't matter"
+          text "(lexicographic order in canon)."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "A tuple is expressed as a record whose keywords are numbers."
+        end
+        tag :td do # IM
+          text "No concept of tuple?"
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "A cons node is a tuple, which is a record."
+        end
+        tag :td do # IM
+          text "?"
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Unification of logical variables"
+        end
+        tag :td do # IM
+          text "possibly absent."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Procedural Abstraction"
+        end
+        tag :td do # IM
+          text "somehow."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Demand-driven Execution"
+        end
+        tag :td do # IM
+          text "by default."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Explicit futures."
+        end
+        tag :td do # IM
+          text "no."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Stateful data types."
+        end
+        tag :td do # IM
+          text "Not without an oracle."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          h3 "Classes and Objects"
+        end
+        tag :td do # IM
+          h3 "OOP"
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Class hierarchy and multiple inheritance, both static and dynamic."
+        end
+        tag :td do # IM
+          text "At least a static class hierarchy to start."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Instances of classes can be mutable objects."
+        end
+        tag :td do # IM
+          text "Have a kind of class, the instances of which bundle flows."
+          text "Have another kind of class, of which the instances would"
+          text "be processes handling bags of messages.  An oracle would"
+          text "be required to kick off such an instance."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "In Oz, a method call looks like a procedure call, where the"
+          text "receiver object appears as the procedure, and there is one"
+          text "argument, which is a record, which functions as the message."
+        end
+        tag :td do # IM
+          text "Quite similar.  Imperatrix-Mundi"
+          em "message"
+          text "instead of an Oz record."
+          text "Make method call the fundamental procedure call, and cast"
+          text "all other procedure calls as method calls, as Smalltalk does,"
+          text "at least in the source syntax."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Oz classes can define attributes."
+          text "At the intersection of an attribute and an instance, we find"
+          text "a logical variable."
+          text "Oz doesn't care when the logical variable will be bound."
+        end
+        tag :td do # IM
+          text "At least allow data to flow from the creation of a value"
+          text "to the execution of a method in that value."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Access to features from outside an object without going through"
+          text "a method."
+        end
+        tag :td do # IM
+          text "No."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Self application."
+        end
+        tag :td do # IM
+          text "Arbitrary mention of"
+          em "self."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Default arguments"
+        end
+        tag :td do # IM
+          text "The bag of keywords in a message are part of the selector."
+        end
+      end # tr
+      tag :tr do
+        tag :td do # Oz
+          text "Logic programming is fundamental, including dont-know"
+          text "nondeterminism."
+        end
+        tag :td do # IM
+          text "Fundamentally deterministic except when oracles are involved."
+          text "They provide dont-care nondeterminism."
+        end
+      end # tr
+    end
+  end
   h2 "2013-05-26"
   p do
     text "The"
@@ -28,14 +241,10 @@ article "Imperatrix Mundi -- Current Ideas", :depth => 1 do
     text "language both put logic on the outside and functional programming"
     text "on the inside."
     text "So, I decide to turn to the "
-    a "Oz/Mozart", :href =>
+    a "Oz", :href =>
       "http://www.mozart-oz.org/documentation/tutorial/index.html"
     text "language as a starting point"
-    text "(I know that the name of the language is Oz and Mozart is just an"
-    text "implementation of the Oz language; however, I believe that just"
-    text "the term \"oz\" (no matter how capitalized) is hard to search"
-    text "for in current searching technology, and so I mention"
-    text "\"Oz/Mozart\" to attract searches for mentions of the Oz language)."
+    text "(keyword for searches: Oz/Mozart)."
   end
   h2 "2010-10-22"
   p do
