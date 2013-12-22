@@ -1,6 +1,7 @@
 # Jack
 
 .rvmrc
+sysconf/c1/etc/nginx/nginx.conf
 
 # not Jack
 *.gem
