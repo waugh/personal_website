@@ -1,7 +1,7 @@
 
   server { # brve_static
     # enable one of the following if you're on Linux or FreeBSD
-    listen 80 default deferred; # for Linux
+    listen 80 default_server deferred; # for Linux
     # listen 80 default_server accept_filter=httpready; # for FreeBSD
 
     # If you have IPv6, you'll likely want to have two separate listeners.
@@ -21,7 +21,7 @@
     keepalive_timeout 5;
 
     # path for static files
-    root /home/static/projects/brve/public;
+    root /home/static/projects/brve_static/public;
 
     try_files $uri/index.html $uri.html $uri =404;
 
