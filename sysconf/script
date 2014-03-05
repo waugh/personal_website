@@ -5,6 +5,10 @@ sudo apt-get install postfix
 sudo adduser static
 sudo adduser static adm
 sudo adduser static sudo
+# Experimental?
+sudo adduser rbenv
+sudo adduser static adm
+sudo adduser static sudo
 \curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
 
 # Not totally sure whether Digital Ocean's initial load included node.js.
