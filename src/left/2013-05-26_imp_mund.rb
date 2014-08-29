@@ -1,18 +1,9 @@
 div :class => "article_summary" do
   h2 "Research Interest"
+  url = "https://github.com/waugh/im_writing"
   p do
-    text "I'm interested in prototyping a computer"
-    text "programming language of a certain type."
-  end
-  ol do
-    li do
-      a "Current musing", :href => "our_articles/imp_mund_soc.html"
-      text "[2013-05-27 UTC]"
-    end
-    li do
-      a "Introduction", :href => "our_articles/imp_mund_intro.html"
-      text "[2010-08-27]"
-    end
+    a url, :href => url
+    text "[2014-08-29 UTC]"
   end
 end
 
