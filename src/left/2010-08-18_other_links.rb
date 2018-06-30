@@ -8,8 +8,8 @@ div :class => "article_summary" do
     end
     li do
       text "The"
-      a "hosting company", :href => "https://www.digitalocean.com"
-      text "of this site. [2013-04-23]"
+      a "hosting company", :href => "https://www.linode.com"
+      text "(including DNS) of this site. [2017-08-05 UCT]"
     end
     li do
       text "The"
