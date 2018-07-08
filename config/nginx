@@ -14,6 +14,7 @@ server {
   client_max_body_size 4G;
   server_name
     jackwaugh.com
+    staging.jackwaugh.com
     ;
 
   # ~2 seconds is often enough for most folks to parse HTML/CSS and
@@ -22,13 +23,13 @@ server {
   keepalive_timeout 5;
 
   # path for static files
-  root /home/static/projects/personal_website/public;
+  root /home/jack/projects/personal_website/public;
 
   try_files $uri/index.html $uri.html $uri =404;
 
   # error pages
   error_page 500 502 503 504 /500.html;
   location = /500.html {
-    root /home/static/projects/personal_website/public;
+    root /home/jack/projects/personal_website/public;
   }
 }
