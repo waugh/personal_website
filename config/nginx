@@ -15,6 +15,7 @@ server {
   server_name
     jackwaugh.com
     staging.jackwaugh.com
+    aaaa.jackwaugh.com
     ;
 
   # ~2 seconds is often enough for most folks to parse HTML/CSS and
