@@ -1,4 +1,4 @@
-personal_website
+old personal website
 ================
 
-Web site about me, for what it may be worth.
+This is not the current repo. The new personal-website code is over on Bitbucket, but without the history that is here.
